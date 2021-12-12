@@ -1,5 +1,7 @@
 # Depression-Detection-System-by-Analyzing-Tweets
-
+Developed a system that uses the Twitter API to scrape the real-time tweets, classified the tweets using Hybrid
+Naive Bayes and SVM model, and plotted a graph which was used to classify the depression into two categories
+Major depression and bipolar depression.
 # Dpds
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
