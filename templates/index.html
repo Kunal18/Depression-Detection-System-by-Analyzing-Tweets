@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>DPDS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-diamond"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>DPDS!</h1>
+										<p>Depression is a serious mental health problem that demands our attention, and to control and prevent it is not an easy task.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#login">Login</a></li>
+								<li><a href="#register">Register</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="{{ url_for('static', filename='images/images.jpg') }}" alt="" /></span>
+								<p>Online social networks have become a common part of everyday life. Moving beyond the debate of whether use of social networks is a benefit or a harm, recent studies have utilized data from online social network to predict individuals well being. For instance, population happiness, reaction to pandemics, unemployment or suicide rate can be
+								predicted from sentiments in social media. This system describes about a technique to identify changes in the behavioral pattern of a person. It would serve as an indicator for early detection of any unusualness in behavior by using analysis of social media posts over a span of time. This system uses a Web scrapper to scrap the social media profiles of the observee’s to scrap the posts made by him/her. The system processes the scrapped posts using Natural Language Processing and classifies the posts accordingly. This system provides a questionnaire to determine which type of depression one has and severity of it. This system is useful to concerned parents as well as psychiatrists to keep track of patient’s behavior.</p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Work</h2>
+								<span class="image main"><img src="{{ url_for('static', filename='images/images1.jpg') }}" alt="" /></span>
+								<p>We propose a system which will scrap the twitter tweets and will classify the tweets using SVM and Naive Bayes
+									taking into account the emoticons and plot a graph of these over a period of time. Depending upon these graphs an
+									analysis will be made which will help us to classify the
+									depression into two major categories Major depression and
+									Bipolar depression. The symptoms of Major disorder
+									include that if a person is suffering from weight loss,
+									insomnia, loss of interest, can’t make decisions for more
+									than 2 weeks then he is suffering from major depression. For
+									Bipolar disorder the person is at times extremely high on
+									energy and at times very low. There is a sudden change in
+									mood. Now, for further help our system alerts the person via
+									an email and shows our analysis. For further diagnosis a
+									questionnaire is embedded on our website which would
+									accurately determine the type of depression the person is
+									going through and would help the person seek help.
+									Psychologist can contact the person through his details.
+									Also, the person must be a registered user to see his
+									complete analysis. Our system would track his improvement
+									once he starts showing positive behavior.</p>
+							</article>
+
+						<!-- About -->
+							<article id="login">
+								<h2 class="major">Login</h2>
+								<span class="image main"><img src="{{ url_for('static', filename='images/images2.jpg') }}" alt="" /></span>
+								<form method="post" action="http://127.0.0.1:5000/main">
+									<div class="fields">
+										<div class="field">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="password">Password</label>
+											<input type="password"  name="password" id="password" rows="4"></input>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Login" class="primary" /></li>
+										
+									</ul>
+								</form>
+								
+							</article>
+
+						<!-- Contact -->
+							<article id="register">
+								<h2 class="major">Register</h2>
+								<span class="image main"><img src="{{ url_for('static', filename='images/images3.jpg') }}" alt="" /></span>
+								<form method="post" action="http://127.0.0.1:5000/main">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="password">Password</label>
+											<input type="password"  name="password" id="password" rows="4"></input>										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Register" class="primary" /></li>
+									</ul>
+								</form>
+								<p>Register using:</p>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; JMK <a href="#">DPDS</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>
