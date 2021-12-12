@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DPDS.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  
+  
+
+
+</head>
+<body id="myPage3" data-spy="scroll" data-target=".navbar" data-offset="60" >
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#myPage">DPDS.</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a routerLink = "/logout">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <div class="container-fluid text-center">    
+      <div class="row content bg-grey">
+        <div class="col-sm-3 sidenav ">
+          <p><a href="#">User Profile</a></p>
+          <p><a href="#">Link</a></p>
+          <p><a href="#">Link</a></p>
+        </div>
+        <div class="col-sm-9 text-left" > 
+          <h1>Welcome</h1>
+          <hr>
+          <p><strong>YOU ARE NOT ALONE.</strong> There are others who have the same questions, concerns & doubts.</p>
+          
+          
+          <div class="container-fluid">
+          <form>
+            <div>
+            <input #search type="text" name="search" placeholder="Twitter ID?">
+          </div>
+          <div>  
+          <button type="submit" class="btn btn-primary " (click)="onAnalyze(search.value)">Analyze</button>
+        </div>
+        </form>
+          </div>
+          <hr>
+          <h3>RESULTS</h3>
+          
+
+
+          <div *ngIf="gotResult">
+          
+          
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <td>TWEET</td>
+                  <td>EMOTION</td>
+                </tr>
+              </thead>
+             <tr *ngFor="let i of name">
+                <td>{{i.t}}</td>
+                <td>{{i.r}}</td>
+              </tr>
+            </table>
+            <div *ngIf="graph">
+            <google-chart
+              [type]="type"
+              [data]="data"
+              [columnNames]="columnNames"
+              [options]="options"
+              [width]="width"
+              [height]="height">
+            </google-chart>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+          <table class="table-bordered align-center" style="text-align:center;padding:5px">
+            <tr>
+              <td>
+                <h5>NORMAL BEHAVIOUR</h5>
+              </td>
+              <td>
+                <h5>ABNORMAL BEHAVIOUR</h5>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                <img src="..//..//..//assets/images/happy.PNG" style="widows: 250px;height:250px" >
+              </td>
+              <td>
+                <img src="..//..//..//assets/images/depress.png" style="widows: 250px;height:250px">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h5>Results similar to above graph indicate normal behaviour.</h5>
+              </td>
+              <td>
+                <h5>Results similar to above graph indicate abnormal bhevaiour.</h5>
+              </td>
+            </tr>
+          </table>
+        </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

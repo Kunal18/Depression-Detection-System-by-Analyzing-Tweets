@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DPDS.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  
+  
+
+
+</head>
+<body id="myPage1" data-spy="scroll" data-target=".navbar" data-offset="60" >
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#myPage">DPDS.</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a routerLink = "/signup">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    
+<div class="login-form"  >
+    <form  #loginForm="ngForm" (ngSubmit)="onSubmit()">
+        <h2 class="text-center">Log in</h2>       
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="Username" required  name="name" >
+        </div>
+
+
+
+
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" required="required"  name="password" >
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+        </div>
+        <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+            <a href="#" class="pull-right">Forgot Password?</a>
+        </div>        
+    </form>
+    <p class="text-center nav-link"><a routerLink="signup">Create an Account</a></p>
+</div>
+
+
+    
+
+
+
+
+
+
+  </body>
+
+  </html>
+  
