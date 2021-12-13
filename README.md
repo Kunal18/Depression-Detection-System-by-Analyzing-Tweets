@@ -2,6 +2,14 @@
 Developed a system that uses the Twitter API to scrape the real-time tweets, classified the tweets using Hybrid
 Naive Bayes and SVM model, and plotted a graph which was used to classify the depression into two categories
 Major depression and bipolar depression.
+
+![image](https://user-images.githubusercontent.com/20738263/145753373-3154b226-0d6b-401b-8bf2-246277f5991b.png)
+![image](https://user-images.githubusercontent.com/20738263/145753413-e9cdd294-dc3f-4028-acb4-677d85818a94.png)
+![image](https://user-images.githubusercontent.com/20738263/145753441-6953e800-3993-4707-86d0-0f49c5dd0751.png)
+![image](https://user-images.githubusercontent.com/20738263/145753465-30a08396-cdbf-43aa-a370-fd9deaf93491.png)
+![image](https://user-images.githubusercontent.com/20738263/145753488-2f683996-92c0-41ee-88aa-06caf72dec89.png)
+
+
 # Dpds
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
@@ -10,21 +18,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
