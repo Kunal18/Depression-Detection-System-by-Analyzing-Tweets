@@ -96,8 +96,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 - [NLTK](https://www.nltk.org/) - Natural Language Toolkit
 - [scikit-learn](https://scikit-learn.org/) - Machine Learning in Python
 - [tweepy](https://www.tweepy.org/) - Twitter API library for Python
-
-## References
-
-- [Depression Detection using Emotion Artificial Intelligence](https://ieeexplore.ieee.org/document/8324195)
-- [A content analysis of depression-related tweets](https://www.sciencedirect.com/science/article/pii/S0747563215301787)
