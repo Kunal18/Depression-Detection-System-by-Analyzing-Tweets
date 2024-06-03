@@ -1,3 +1,4 @@
+<!--
 # Depression-Detection-System-by-Analyzing-Tweets
 Developed a system that uses the Twitter API to scrape the real-time tweets, classified the tweets using Hybrid
 Naive Bayes and SVM model, and plotted a graph which was used to classify the depression into two categories
@@ -26,8 +27,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-
-Here's a suggested README content for your Depression Detection System by Analyzing Tweets project, written in a professional standard format:
+-->
 
 # Depression Detection System by Analyzing Tweets
 
@@ -35,9 +35,17 @@ Here's a suggested README content for your Depression Detection System by Analyz
 
 This project aims to develop a system that can detect signs of depression by analyzing tweets from Twitter. The system utilizes Natural Language Processing (NLP) techniques, machine learning algorithms, and the Twitter API to scrape and classify tweets, enabling the identification of major depression and bipolar disorder patterns.
 
+![image](https://user-images.githubusercontent.com/20738263/145753373-3154b226-0d6b-401b-8bf2-246277f5991b.png)
+![image](https://user-images.githubusercontent.com/20738263/145753413-e9cdd294-dc3f-4028-acb4-677d85818a94.png)
+![image](https://user-images.githubusercontent.com/20738263/145753441-6953e800-3993-4707-86d0-0f49c5dd0751.png)
+![image](https://user-images.githubusercontent.com/20738263/145753465-30a08396-cdbf-43aa-a370-fd9deaf93491.png)
+![image](https://user-images.githubusercontent.com/20738263/145753488-2f683996-92c0-41ee-88aa-06caf72dec89.png)
+
 ## Motivation
 
 With the rise of social media platforms, individuals are increasingly sharing their thoughts, emotions, and experiences online. This project leverages the wealth of data available on Twitter to detect and monitor potential signs of depression in a timely manner. Early detection and intervention can play a crucial role in preventing individuals from resorting to extreme measures and providing them with the necessary support and resources.
+
+Developed a system that uses the Twitter API to scrape the real-time tweets, classified the tweets using Hybrid Naive Bayes and SVM model, and plotted a graph which was used to classify the depression into two categories Major depression and bipolar depression.
 
 ## Features
 
