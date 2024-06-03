@@ -28,7 +28,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 -->
-
 # Depression Detection System by Analyzing Tweets
 
 [![DOI](https://img.shields.io/badge/DOI-10.2139%2Fssrn.3358809-blue.svg)](https://dx.doi.org/10.2139/ssrn.3358809)
@@ -58,6 +57,8 @@ Developed a system that uses the Twitter API to scrape the real-time tweets, cla
 
 ## Installation
 
+## Installation
+
 1. Clone the repository:
 
 ```
@@ -67,23 +68,17 @@ git clone https://github.com/your-username/depression-detection-system.git
 2. Install the required dependencies:
 
 ```
-pip install -r requirements.txt
+npm install
 ```
 
-3. Configure the Twitter API credentials by creating a `config.py` file and adding your API keys:
+## Development server
 
-```python
-consumer_key = 'your_consumer_key'
-consumer_secret = 'your_consumer_secret'
-access_token = 'your_access_token'
-access_token_secret = 'your_access_token_secret'
-```
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-4. Run the application:
+## Build
 
-```
-python app.py
-```
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
 
 ## Usage
 
